@@ -20,7 +20,7 @@ Cybersecurity professional with 7+ years of experience in enterprise incident re
 ## Resume
 
 Download the full resume here:  
-Fatema Johra Resume (PDF)](./resume/Fatema_Johra_Resume.pdf)
+[Fatema Johra Resume (PDF)](./resume/Fatema_Johra_Resume.pdf)
 
 ---
 
