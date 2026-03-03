@@ -18,5 +18,5 @@ Welcome! This repository showcases selected incident response frameworks, cloud 
 ## Contact
 
 Email: fjohra@hotmail.com  
-LinkedIn: (insert link)  
+LinkedIn: [(insert link) ](https://www.linkedin.com/in/fjohra/) 
 GitHub: https://github.com/ftj258
