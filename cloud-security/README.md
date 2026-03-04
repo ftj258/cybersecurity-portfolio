@@ -39,4 +39,4 @@ Assessment artifacts to validate cloud security posture and controls.
 
 📬 Contact  
 Email: fjohra@hotmail.com  
-LinkedIn: (Add LinkedIn URL)
+LinkedIn: [(Add LinkedIn URL)](https://www.linkedin.com/in/fjohra/)
