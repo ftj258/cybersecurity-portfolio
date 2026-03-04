@@ -1,0 +1,918 @@
+2019-04-17 16:40:47|MAIN|INFO|Started macOS Artifact Parsing Tool, version 0.3
+2019-04-17 16:40:47|MAIN|INFO|Dates and times are in UTC unless the specific artifact being parsed saves it as local time!
+2019-04-17 16:40:47|MAIN|INFO|Pytsk version = 20170801
+2019-04-17 16:40:47|MAIN|INFO|Pyewf version = 20140807
+2019-04-17 16:40:47|MAIN|INFO|Opened image /Users/user/Downloads/tracy-home-2012-07-16-final.E01
+2019-04-17 16:40:47|MAIN|INFO| Info: Probably not a disk image, trying to parse as a File system
+2019-04-17 16:40:47|MAIN|INFO|Found valid OSX/macOS kernel
+2019-04-17 16:40:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /System/Library/CoreServices/SystemVersion.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 533282.
+2019-04-17 16:40:47|MAIN.HELPERS.MACINFO|ERROR|Could not open plist to get system version info!
+2019-04-17 16:41:11|MAIN.HELPERS.MACINFO|WARNING|There is already a value in DARWIN_USER_DIR /private/var/folders/tt/trs69sds5td93n_72536bp_r0000gq/0
+2019-04-17 16:41:11|MAIN.HELPERS.MACINFO|ERROR|Could not find username for UID=4294967294 GID=4294967294
+2019-04-17 16:41:11|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:11|MAIN|INFO|Running plugin BASHSESSIONS
+2019-04-17 16:41:16|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/tracysumtwelve/.bash_history to /Users/user/Desktop/mac_apt_dump/Export/BASHSESSIONS/tracysumtwelve_.bash_history
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 562587.
+2019-04-17 16:41:16|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/tracysumtwelve/.bash_history' to '/Users/user/Desktop/mac_apt_dump/Export/BASHSESSIONS/tracysumtwelve_.bash_history'
+2019-04-17 16:41:16|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/tracysumtwelve/.bash_history
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 562587.
+2019-04-17 16:41:16|MAIN.BASHSESSIONS|ERROR|Could not open file /Users/tracysumtwelve/.bash_history
+2019-04-17 16:41:16|MAIN.BASHSESSIONS|INFO|Found 4 session(s)
+2019-04-17 16:41:16|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:16|MAIN|INFO|Running plugin BASICINFO
+2019-04-17 16:41:17|MAIN.BASICINFO|INFO|/System/System/HostName not found in /Library/Preferences/SystemConfiguration/preferences.plist
+2019-04-17 16:41:18|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Library/Preferences/com.apple.loginwindow.plist to /Users/user/Desktop/mac_apt_dump/Export/BASICINFO/com.apple.loginwindow.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520058.
+2019-04-17 16:41:18|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Library/Preferences/com.apple.loginwindow.plist' to '/Users/user/Desktop/mac_apt_dump/Export/BASICINFO/com.apple.loginwindow.plist'
+2019-04-17 16:41:18|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Library/Preferences/com.apple.loginwindow.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520058.
+2019-04-17 16:41:18|MAIN.BASICINFO|ERROR|Failed to read plist /Library/Preferences/com.apple.loginwindow.plist Error was : Failed to open file
+2019-04-17 16:41:18|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:18|MAIN|INFO|Running plugin BLUETOOTH
+2019-04-17 16:41:18|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:18|MAIN|INFO|Running plugin DOCKITEMS
+2019-04-17 16:41:20|MAIN.DOCKITEMS|ERROR|Could not read plist: /private/var/spool/postfix/Library/Preferences/com.apple.dock.plist Error was : not well-formed (invalid token): line 1, column 2
+2019-04-17 16:41:22|MAIN.DOCKITEMS|INFO|51 user dock item(s) found
+2019-04-17 16:41:22|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:22|MAIN|INFO|Running plugin DOMAINS
+2019-04-17 16:41:23|MAIN.DOMAINS|INFO|Folder /Library/Preferences/OpenDirectory/Configurations/Active Directory not found!
+2019-04-17 16:41:23|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:23|MAIN|INFO|Running plugin FSEVENTS
+2019-04-17 16:41:23|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/0000000000010321 to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000010321
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508811.
+2019-04-17 16:41:23|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/0000000000010321' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000010321'
+2019-04-17 16:41:23|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/0000000000010321
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508811.
+2019-04-17 16:41:23|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/0000000000010321
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/000000000001ed2d to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000001ed2d
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 518864.
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/000000000001ed2d' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000001ed2d'
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/000000000001ed2d
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 518864.
+2019-04-17 16:41:24|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/000000000001ed2d
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/000000000002d74b to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000002d74b
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 510027.
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/000000000002d74b' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000002d74b'
+2019-04-17 16:41:24|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/000000000002d74b
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 510027.
+2019-04-17 16:41:24|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/000000000002d74b
+2019-04-17 16:41:25|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/0000000000048474 to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000048474
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508686.
+2019-04-17 16:41:25|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/0000000000048474' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000048474'
+2019-04-17 16:41:25|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/0000000000048474
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508686.
+2019-04-17 16:41:25|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/0000000000048474
+2019-04-17 16:41:25|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/0000000000048475 to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000048475
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508687.
+2019-04-17 16:41:25|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/0000000000048475' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/0000000000048475'
+2019-04-17 16:41:26|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/0000000000048475
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508687.
+2019-04-17 16:41:26|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/0000000000048475
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/000000000004b544 to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000004b544
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520064.
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/000000000004b544' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000004b544'
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/000000000004b544
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520064.
+2019-04-17 16:41:27|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/000000000004b544
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /.fseventsd/000000000004b545 to /Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000004b545
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520064.
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|INFO|Failed to export '/.fseventsd/000000000004b545' to '/Users/user/Desktop/mac_apt_dump/Export/FSEVENTS/000000000004b545'
+2019-04-17 16:41:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /.fseventsd/000000000004b545
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 520064.
+2019-04-17 16:41:27|MAIN.FSEVENTS|ERROR|Could not open file /.fseventsd/000000000004b545
+2019-04-17 16:41:28|MAIN.FSEVENTS|INFO|fseventsd-uuid=F0F14D65-4967-4AD7-8917-709BEAE9506C
+2019-04-17 16:41:28|MAIN.FSEVENTS|INFO|949 fsevent(s) found
+2019-04-17 16:41:28|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:28|MAIN|INFO|Running plugin IDEVICEBACKUPS
+2019-04-17 16:41:31|MAIN.IDEVICEBACKUPS|INFO|1 iDevice Backups Found for user tracysumtwelve
+2019-04-17 16:41:32|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:32|MAIN|INFO|Running plugin IMESSAGE
+2019-04-17 16:41:34|MAIN.IMESSAGE|ERROR|Query  execution failed. Query was: SELECT m.rowid as msg_id, m.handle_id, m.text ,c.chat_identifier as contact,  (case when m.is_from_me == 0 then '->' when m.is_from_me == 1 then '<-' end ) as direction,  m.account, m.date, m.date_read, m.date_delivered, m.is_from_me, m.is_read,  a.filename as att_path, a.transfer_name as att_name, a.total_bytes as att_size from message as m  LEFT JOIN message_attachment_join as ma on ma.message_id = m.rowid  LEFT JOIN attachment as a on a.ROWID=ma.attachment_id  LEFT JOIN chat_message_join as cmj on cmj.message_id = m.rowid LEFT JOIN chat as c on c.ROWID=cmj.chat_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/imessage.py", line 130, in ReadiMessages
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:36|MAIN.IMESSAGE|INFO|No imessages found.
+2019-04-17 16:41:36|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:36|MAIN|INFO|Running plugin INETACCOUNTS
+2019-04-17 16:41:41|MAIN.INETACCOUNTS|INFO|Processing internet accounts for user '_postfix' from file /private/var/spool/postfix/Library/Accounts/Accounts1.sqlite
+2019-04-17 16:41:41|MAIN.INETACCOUNTS|ERROR|Query  execution failed. Query was:  SELECT Z_PK as acc_id,  (SELECT ZACCOUNTTYPEDESCRIPTION from ZACCOUNTTYPE where ZACCOUNTTYPE.Z_PK=a.ZACCOUNTTYPE) as acc_type,  a.ZACCOUNTDESCRIPTION as acc_name, a.ZUSERNAME as acc_user, a.ZDATE as acc_date,  a.ZPARENTACCOUNT as acc_parent_id, a.ZIDENTIFIER as acc_uuid, a.ZOWNINGBUNDLEID as acc_bundle  FROM ZACCOUNT as a  WHERE a.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME LIKE 'Account')
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/inetaccounts.py", line 131, in ReadAccountsDb
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:41|MAIN.INETACCOUNTS|INFO|Processing internet accounts for user '_postfix' from file /private/var/spool/postfix/Library/Accounts/Accounts2.sqlite
+2019-04-17 16:41:41|MAIN.INETACCOUNTS|ERROR|Query  execution failed. Query was:  SELECT Z_PK as acc_id,  (SELECT ZACCOUNTTYPEDESCRIPTION from ZACCOUNTTYPE where ZACCOUNTTYPE.Z_PK=a.ZACCOUNTTYPE) as acc_type,  a.ZACCOUNTDESCRIPTION as acc_name, a.ZUSERNAME as acc_user, a.ZDATE as acc_date,  a.ZPARENTACCOUNT as acc_parent_id, a.ZIDENTIFIER as acc_uuid, a.ZOWNINGBUNDLEID as acc_bundle  FROM ZACCOUNT as a  WHERE a.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME LIKE 'Account')
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/inetaccounts.py", line 131, in ReadAccountsDb
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:42|MAIN.INETACCOUNTS|INFO|Processing internet accounts for user '_postfix' from file /private/var/spool/postfix/Library/Accounts/Accounts3.sqlite
+2019-04-17 16:41:42|MAIN.INETACCOUNTS|ERROR|Query  execution failed. Query was:  SELECT Z_PK as acc_id,  (SELECT ZACCOUNTTYPEDESCRIPTION from ZACCOUNTTYPE where ZACCOUNTTYPE.Z_PK=a.ZACCOUNTTYPE) as acc_type,  a.ZACCOUNTDESCRIPTION as acc_name, a.ZUSERNAME as acc_user, a.ZDATE as acc_date,  a.ZPARENTACCOUNT as acc_parent_id, a.ZIDENTIFIER as acc_uuid, a.ZOWNINGBUNDLEID as acc_bundle  FROM ZACCOUNT as a  WHERE a.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME LIKE 'Account')
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/inetaccounts.py", line 131, in ReadAccountsDb
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:42|MAIN.INETACCOUNTS|INFO|Processing internet accounts for user '_postfix' from file /private/var/spool/postfix/Library/Accounts/Accounts4.sqlite
+2019-04-17 16:41:43|MAIN.INETACCOUNTS|ERROR|Query  execution failed. Query was:  SELECT Z_PK as acc_id,  (SELECT ZACCOUNTTYPEDESCRIPTION from ZACCOUNTTYPE where ZACCOUNTTYPE.Z_PK=a.ZACCOUNTTYPE) as acc_type,  a.ZACCOUNTDESCRIPTION as acc_name, a.ZUSERNAME as acc_user, a.ZDATE as acc_date,  a.ZPARENTACCOUNT as acc_parent_id, a.ZIDENTIFIER as acc_uuid, a.ZOWNINGBUNDLEID as acc_bundle  FROM ZACCOUNT as a  WHERE a.Z_ENT = (SELECT Z_ENT FROM Z_PRIMARYKEY WHERE Z_NAME LIKE 'Account')
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/inetaccounts.py", line 131, in ReadAccountsDb
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:50|MAIN.INETACCOUNTS|INFO|No accounts found
+2019-04-17 16:41:50|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:50|MAIN|INFO|Running plugin INSTALLHISTORY
+2019-04-17 16:41:50|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:50|MAIN|INFO|Running plugin NETUSAGE
+2019-04-17 16:41:51|MAIN.NETUSAGE|INFO|No net usage data found
+2019-04-17 16:41:51|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:51|MAIN|INFO|Running plugin NETWORKING
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|Found mac address = 10:40:f3:92:1c:6c on interface en0-1
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|/private/var/run/resolv.conf does not exist!
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|/etc/hosts Content --> 127.0.0.1	localhost
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|/etc/hosts Content --> 255.255.255.255	broadcasthost
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|/etc/hosts Content --> ::1             localhost
+2019-04-17 16:41:51|MAIN.NETWORKING|INFO|/etc/hosts Content --> fe80::1%lo0	localhost
+2019-04-17 16:41:52|MAIN.NETWORKING|INFO|Model = MacBookAir4,2
+2019-04-17 16:41:52|MAIN.NETWORKING|INFO|Found unknown data in plist at /NetworkServices/366B2C0C-17F2-48D9-ABFC-8B3094F6114A/Interface/SubType Value=PPPSerial
+2019-04-17 16:41:52|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:41:52|MAIN|INFO|Running plugin NOTES
+2019-04-17 16:41:58|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV1.storedata
+2019-04-17 16:41:58|MAIN.NOTES|ERROR|Query  execution failed. Query was: SELECT n.Z_PK as note_id, n.ZDATECREATED as created, n.ZDATEEDITED as edited, n.ZTITLE as title,  (SELECT ZNAME from ZFOLDER where n.ZFOLDER=ZFOLDER.Z_PK) as folder,  (SELECT zf2.ZACCOUNT from ZFOLDER as zf1  LEFT JOIN ZFOLDER as zf2 on (zf1.ZPARENT=zf2.Z_PK) where n.ZFOLDER=zf1.Z_PK) as folder_parent_id,  ac.ZEMAILADDRESS as email, ac.ZACCOUNTDESCRIPTION as acc_desc, ac.ZUSERNAME as username, b.ZHTMLSTRING as data,  att.ZCONTENTID as att_id, att.ZFILEURL as file_url  FROM ZNOTE as n  LEFT JOIN ZNOTEBODY as b ON b.ZNOTE = n.Z_PK  LEFT JOIN ZATTACHMENT as att ON att.ZNOTE = n.Z_PK  LEFT JOIN ZACCOUNT as ac ON ac.Z_PK = folder_parent_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 122, in ReadNotesV2_V4_V6
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:58|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV2.storedata
+2019-04-17 16:41:59|MAIN.NOTES|ERROR|Query  execution failed. Query was: SELECT n.Z_PK as note_id, n.ZDATECREATED as created, n.ZDATEEDITED as edited, n.ZTITLE as title,  (SELECT ZNAME from ZFOLDER where n.ZFOLDER=ZFOLDER.Z_PK) as folder,  (SELECT zf2.ZACCOUNT from ZFOLDER as zf1  LEFT JOIN ZFOLDER as zf2 on (zf1.ZPARENT=zf2.Z_PK) where n.ZFOLDER=zf1.Z_PK) as folder_parent_id,  ac.ZEMAILADDRESS as email, ac.ZACCOUNTDESCRIPTION as acc_desc, ac.ZUSERNAME as username, b.ZHTMLSTRING as data,  att.ZCONTENTID as att_id, att.ZFILEURL as file_url  FROM ZNOTE as n  LEFT JOIN ZNOTEBODY as b ON b.ZNOTE = n.Z_PK  LEFT JOIN ZATTACHMENT as att ON att.ZNOTE = n.Z_PK  LEFT JOIN ZACCOUNT as ac ON ac.Z_PK = folder_parent_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 122, in ReadNotesV2_V4_V6
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:41:59|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV4.storedata
+2019-04-17 16:41:59|MAIN.NOTES|ERROR|Query  execution failed. Query was: SELECT n.Z_PK as note_id, n.ZDATECREATED as created, n.ZDATEEDITED as edited, n.ZTITLE as title,  (SELECT ZNAME from ZFOLDER where n.ZFOLDER=ZFOLDER.Z_PK) as folder,  (SELECT zf2.ZACCOUNT from ZFOLDER as zf1  LEFT JOIN ZFOLDER as zf2 on (zf1.ZPARENT=zf2.Z_PK) where n.ZFOLDER=zf1.Z_PK) as folder_parent_id,  ac.ZEMAILADDRESS as email, ac.ZACCOUNTDESCRIPTION as acc_desc, ac.ZUSERNAME as username, b.ZHTMLSTRING as data,  att.ZCONTENTID as att_id, att.ZFILEURL as file_url  FROM ZNOTE as n  LEFT JOIN ZNOTEBODY as b ON b.ZNOTE = n.Z_PK  LEFT JOIN ZATTACHMENT as att ON att.ZNOTE = n.Z_PK  LEFT JOIN ZACCOUNT as ac ON ac.Z_PK = folder_parent_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 122, in ReadNotesV2_V4_V6
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:42:00|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV6.storedata
+2019-04-17 16:42:00|MAIN.NOTES|ERROR|Query  execution failed. Query was: SELECT n.Z_PK as note_id, n.ZDATECREATED as created, n.ZDATEEDITED as edited, n.ZTITLE as title,  (SELECT ZNAME from ZFOLDER where n.ZFOLDER=ZFOLDER.Z_PK) as folder,  (SELECT zf2.ZACCOUNT from ZFOLDER as zf1  LEFT JOIN ZFOLDER as zf2 on (zf1.ZPARENT=zf2.Z_PK) where n.ZFOLDER=zf1.Z_PK) as folder_parent_id,  ac.ZEMAILADDRESS as email, ac.ZACCOUNTDESCRIPTION as acc_desc, ac.ZUSERNAME as username, b.ZHTMLSTRING as data,  att.ZCONTENTID as att_id, att.ZFILEURL as file_url  FROM ZNOTE as n  LEFT JOIN ZNOTEBODY as b ON b.ZNOTE = n.Z_PK  LEFT JOIN ZATTACHMENT as att ON att.ZNOTE = n.Z_PK  LEFT JOIN ZACCOUNT as ac ON ac.Z_PK = folder_parent_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 122, in ReadNotesV2_V4_V6
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:42:00|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Containers/com.apple.Notes/Data/Library/Notes/NotesV7.storedata
+2019-04-17 16:42:01|MAIN.NOTES|ERROR|Query  execution failed. Query was: SELECT n.Z_PK as note_id, n.ZDATECREATED as created, n.ZDATEEDITED as edited, n.ZTITLE as title,  (SELECT ZNAME from ZFOLDER where n.ZFOLDER=ZFOLDER.Z_PK) as folder,  (SELECT zf2.ZACCOUNT from ZFOLDER as zf1  LEFT JOIN ZFOLDER as zf2 on (zf1.ZPARENT=zf2.Z_PK) where n.ZFOLDER=zf1.Z_PK) as folder_parent_id,  ac.ZEMAILADDRESS as email, ac.ZACCOUNTDESCRIPTION as acc_desc, ac.ZUSERNAME as username, b.ZHTMLSTRING as data,  att.ZCONTENTID as att_id, att.ZFILEURL as file_url  FROM ZNOTE as n  LEFT JOIN ZNOTEBODY as b ON b.ZNOTE = n.Z_PK  LEFT JOIN ZATTACHMENT as att ON att.ZNOTE = n.Z_PK  LEFT JOIN ZACCOUNT as ac ON ac.Z_PK = folder_parent_id
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 122, in ReadNotesV2_V4_V6
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:42:01|MAIN.NOTES|INFO|Processing notes for user '_postfix' from file /private/var/spool/postfix/Library/Group Containers/group.com.apple.notes/NoteStore.sqlite
+2019-04-17 16:42:01|MAIN.NOTES|ERROR|Failed to list tables of db. Error Details:file is not a database
+2019-04-17 16:42:01|MAIN.NOTES|ERROR|Query  execution failed. Query was:  SELECT n.Z_PK, n.ZNOTE as note_id, n.ZDATA as data,  c3.ZFILESIZE,  c4.ZFILENAME, c4.ZIDENTIFIER as att_uuid,   c1.ZTITLE1 as title, c1.ZSNIPPET as snippet, c1.ZIDENTIFIER as noteID,  c1.ZCREATIONDATE1 as created, c1.ZLASTVIEWEDMODIFICATIONDATE, c1.ZMODIFICATIONDATE1 as modified,  c2.ZACCOUNT3, c2.ZTITLE2 as folderName, c2.ZIDENTIFIER as folderID,  c5.ZNAME as acc_name, c5.ZIDENTIFIER as acc_identifier, c5.ZACCOUNTTYPE  FROM ZICNOTEDATA as n  LEFT JOIN ZICCLOUDSYNCINGOBJECT as c1 ON c1.ZNOTEDATA = n.Z_PK   LEFT JOIN ZICCLOUDSYNCINGOBJECT as c2 ON c2.Z_PK = c1.ZFOLDER  LEFT JOIN ZICCLOUDSYNCINGOBJECT as c3 ON c3.ZNOTE= n.ZNOTE  LEFT JOIN ZICCLOUDSYNCINGOBJECT as c4 ON c4.ZATTACHMENT1= c3.Z_PK  LEFT JOIN ZICCLOUDSYNCINGOBJECT as c5 ON c5.Z_PK = c1.ZACCOUNT2   ORDER BY note_id  
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/notes.py", line 211, in ReadNotesHighSierra
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:42:12|MAIN.NOTES|INFO|No notes found
+2019-04-17 16:42:12|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:42:12|MAIN|INFO|Running plugin NOTIFICATIONS
+2019-04-17 16:42:12|MAIN.NOTIFICATIONS|INFO|No notification data was retrieved!
+2019-04-17 16:42:12|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:42:12|MAIN|INFO|Running plugin PRINTJOBS
+2019-04-17 16:42:12|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:42:12|MAIN|INFO|Running plugin QUARANTINE
+2019-04-17 16:42:13|MAIN.QUARANTINE|INFO|Processing quarantine events for user '_postfix' from file /private/var/spool/postfix/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
+2019-04-17 16:42:14|MAIN.QUARANTINE|ERROR|Query  execution failed. Query was: SELECT LSQuarantineEventIdentifier as id, LSQuarantineTimeStamp as ts, LSQuarantineAgentBundleIdentifier as bundle,  LSQuarantineAgentName as agent_name, LSQuarantineDataURLString as data_url,  LSQuarantineSenderName as sender_name, LSQuarantineSenderAddress as sender_add, LSQuarantineTypeNumber as type_num,  LSQuarantineOriginTitle as o_title, LSQuarantineOriginURLString as o_url, LSQuarantineOriginAlias as o_alias  FROM LSQuarantineEvent  ORDER BY ts
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/quarantine.py", line 80, in ReadQuarantineDb
+    cursor = db.execute(query)
+DatabaseError: file is not a database
+2019-04-17 16:42:15|MAIN.QUARANTINE|INFO|Processing quarantine events for user 'terrysumtwelve' from file /Users/terrysumtwelve/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
+2019-04-17 16:42:16|MAIN.QUARANTINE|INFO|Processing quarantine events for user 'tracysumtwelve' from file /Users/tracysumtwelve/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
+2019-04-17 16:42:16|MAIN.QUARANTINE|INFO|Processing quarantine events for user 'joesumtwelve (Deleted)' from file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
+2019-04-17 16:42:16|MAIN.QUARANTINE|INFO|40 quarantine item(s) found
+2019-04-17 16:42:16|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:42:16|MAIN|INFO|Running plugin RECENTITEMS
+2019-04-17 16:42:21|MAIN.RECENTITEMS|INFO|Failed to open plist: /private/var/spool/postfix/Library/Preferences/com.apple.recentitems.plist
+2019-04-17 16:42:21|MAIN.RECENTITEMS|INFO|Failed to open plist: /private/var/spool/postfix/Library/Preferences/.GlobalPreferences.plist
+2019-04-17 16:42:21|MAIN.RECENTITEMS|INFO|Failed to open plist: /private/var/spool/postfix/Library/Preferences/com.apple.finder.plist
+2019-04-17 16:42:21|MAIN.RECENTITEMS|INFO|Failed to open plist: /private/var/spool/postfix/Library/Preferences/com.apple.sidebarlists.plist
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Preferences/com.apple.finder.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.finder.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508634.
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Preferences/com.apple.finder.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.finder.plist'
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/terrysumtwelve/Library/Preferences/com.apple.finder.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508634.
+2019-04-17 16:42:27|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/terrysumtwelve/Library/Preferences/com.apple.finder.plist
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/tracysumtwelve/Library/Preferences/com.apple.recentitems.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/tracysumtwelve_com.apple.recentitems.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508649.
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/tracysumtwelve/Library/Preferences/com.apple.recentitems.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/tracysumtwelve_com.apple.recentitems.plist'
+2019-04-17 16:42:27|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/tracysumtwelve/Library/Preferences/com.apple.recentitems.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508649.
+2019-04-17 16:42:27|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/tracysumtwelve/Library/Preferences/com.apple.recentitems.plist
+2019-04-17 16:42:28|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/tracysumtwelve/Library/Preferences/.GlobalPreferences.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/tracysumtwelve_.GlobalPreferences.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508645.
+2019-04-17 16:42:28|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/tracysumtwelve/Library/Preferences/.GlobalPreferences.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/tracysumtwelve_.GlobalPreferences.plist'
+2019-04-17 16:42:28|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/tracysumtwelve/Library/Preferences/.GlobalPreferences.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 508645.
+2019-04-17 16:42:28|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/tracysumtwelve/Library/Preferences/.GlobalPreferences.plist
+2019-04-17 16:42:29|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.sidebarlists.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.sidebarlists.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 566648.
+2019-04-17 16:42:29|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.sidebarlists.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.sidebarlists.plist'
+2019-04-17 16:42:29|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.sidebarlists.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 566648.
+2019-04-17 16:42:29|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.sidebarlists.plist
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.Preview.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 512642.
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.Preview.LSSharedFileList.plist'
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.Preview.LSSharedFileList01.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 512642.
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_com.apple.Preview.LSSharedFileList01.plist'
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 512642.
+2019-04-17 16:42:38|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/terrysumtwelve/Library/Preferences/com.apple.Preview.LSSharedFileList.plist
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_org.openoffice.script.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 503824.
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_org.openoffice.script.LSSharedFileList.plist'
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_org.openoffice.script.LSSharedFileList01.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 503824.
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/terrysumtwelve_org.openoffice.script.LSSharedFileList01.plist'
+2019-04-17 16:42:38|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 503824.
+2019-04-17 16:42:38|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/terrysumtwelve/Library/Preferences/org.openoffice.script.LSSharedFileList.plist
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.Preview.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 566517.
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.Preview.LSSharedFileList.plist'
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.Preview.LSSharedFileList01.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 566517.
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_com.apple.Preview.LSSharedFileList01.plist'
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 566517.
+2019-04-17 16:42:47|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.Preview.LSSharedFileList.plist
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_org.openoffice.script.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 526979.
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_org.openoffice.script.LSSharedFileList.plist'
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist to /Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_org.openoffice.script.LSSharedFileList01.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 526979.
+2019-04-17 16:42:47|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist' to '/Users/user/Desktop/mac_apt_dump/Export/RECENTITEMS/joesumtwelve (Deleted)_org.openoffice.script.LSSharedFileList01.plist'
+2019-04-17 16:42:48|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 526979.
+2019-04-17 16:42:48|MAIN.RECENTITEMS|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Preferences/org.openoffice.script.LSSharedFileList.plist
+2019-04-17 16:42:54|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:42:54|MAIN|INFO|Running plugin SAFARI
+2019-04-17 16:42:56|MAIN.SAFARI|INFO|Failed to open plist: /private/var/spool/postfix/Library/Preferences/com.apple.safari.plist
+2019-04-17 16:42:58|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Safari/History.plist to /Users/user/Desktop/mac_apt_dump/Export/SAFARI/terrysumtwelve_History.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 531034.
+2019-04-17 16:42:58|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Safari/History.plist' to '/Users/user/Desktop/mac_apt_dump/Export/SAFARI/terrysumtwelve_History.plist'
+2019-04-17 16:42:58|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/terrysumtwelve/Library/Safari/History.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 531034.
+2019-04-17 16:42:58|MAIN.SAFARI|INFO|Failed to open plist: /Users/terrysumtwelve/Library/Safari/History.plist
+2019-04-17 16:43:00|MAIN.SAFARI|INFO|Topsites last modified on 2012-06-12 20:14:08.826761
+2019-04-17 16:43:00|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/terrysumtwelve/Library/Safari/LastSession.plist to /Users/user/Desktop/mac_apt_dump/Export/SAFARI/terrysumtwelve_LastSession.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 536800.
+2019-04-17 16:43:00|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/terrysumtwelve/Library/Safari/LastSession.plist' to '/Users/user/Desktop/mac_apt_dump/Export/SAFARI/terrysumtwelve_LastSession.plist'
+2019-04-17 16:43:00|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/terrysumtwelve/Library/Safari/LastSession.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 536800.
+2019-04-17 16:43:00|MAIN.SAFARI|INFO|Failed to open plist: /Users/terrysumtwelve/Library/Safari/LastSession.plist
+2019-04-17 16:43:01|MAIN.SAFARI|ERROR|WebHistoryDomains.v2 not found
+2019-04-17 16:43:01|MAIN.SAFARI|ERROR|WebBookmarkFileVersion not found
+2019-04-17 16:43:01|MAIN.SAFARI|INFO|Unknown type found in bookmark :  @ 
+2019-04-17 16:43:02|MAIN.SAFARI|INFO|Topsites last modified on 2012-06-13 20:09:58.641604
+2019-04-17 16:43:02|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.safari.plist to /Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_com.apple.safari.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:02|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.safari.plist' to '/Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_com.apple.safari.plist'
+2019-04-17 16:43:02|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.safari.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:02|MAIN.SAFARI|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Preferences/com.apple.safari.plist
+2019-04-17 16:43:03|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Safari/History.plist to /Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_History.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:03|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Safari/History.plist' to '/Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_History.plist'
+2019-04-17 16:43:03|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Safari/History.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:03|MAIN.SAFARI|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Safari/History.plist
+2019-04-17 16:43:04|MAIN.SAFARI|INFO|Topsites last modified on 2012-06-14 20:53:28.443614
+2019-04-17 16:43:04|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Users/joesumtwelve (Deleted)/Library/Safari/LastSession.plist to /Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_LastSession.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:04|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Users/joesumtwelve (Deleted)/Library/Safari/LastSession.plist' to '/Users/user/Desktop/mac_apt_dump/Export/SAFARI/joesumtwelve (Deleted)_LastSession.plist'
+2019-04-17 16:43:04|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Users/joesumtwelve (Deleted)/Library/Safari/LastSession.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 565613.
+2019-04-17 16:43:04|MAIN.SAFARI|INFO|Failed to open plist: /Users/joesumtwelve (Deleted)/Library/Safari/LastSession.plist
+2019-04-17 16:43:04|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:43:04|MAIN|INFO|Running plugin SPOTLIGHT
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Now processing file /private/var/spool/postfix/Library/Metadata/CoreSpotlight/index.spotlightV3/store.db 
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Spotlight data for user='_postfix' db='store.db' will be saved with table/sheet name as _postfix-store
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Processing /private/var/spool/postfix/Library/Metadata/CoreSpotlight/index.spotlightV3/store.db
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Creating output folder for spotlight at /Users/user/Desktop/mac_apt_dump/SPOTLIGHT_DATA/_postfix
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|ERROR|Exception processing spotlight store db file
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/spotlight.py", line 138, in ProcessStoreDb
+    store = spotlight_parser.SpotlightStore(input_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/spotlight_parser.py", line 391, in __init__
+    raise Exception('Not a version 2 Spotlight store.db file, invalid format!')
+Exception: Not a version 2 Spotlight store.db file, invalid format!
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Now processing file /private/var/spool/postfix/Library/Metadata/CoreSpotlight/index.spotlightV3/.store.db
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Spotlight store for user='_postfix' db='.store.db' will be saved with table/sheet name as _postfix-.store-DIFF
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|INFO|Processing /private/var/spool/postfix/Library/Metadata/CoreSpotlight/index.spotlightV3/.store.db
+2019-04-17 16:43:07|MAIN.SPOTLIGHT|ERROR|Exception processing spotlight store db file
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/spotlight.py", line 138, in ProcessStoreDb
+    store = spotlight_parser.SpotlightStore(input_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/spotlight_parser.py", line 391, in __init__
+    raise Exception('Not a version 2 Spotlight store.db file, invalid format!')
+Exception: Not a version 2 Spotlight store.db file, invalid format!
+2019-04-17 16:43:10|MAIN.SPOTLIGHT|INFO|Trying to get spotlight configuration from /.Spotlight-V100/VolumeConfiguration.plist
+2019-04-17 16:43:10|MAIN.SPOTLIGHT|INFO|1 store(s) found
+2019-04-17 16:43:11|MAIN.SPOTLIGHT|INFO|Now processing file /.Spotlight-V100/Store-V2/FECD1AE7-94BC-4741-98FD-3C8954E3324E/store.db 
+2019-04-17 16:43:11|MAIN.SPOTLIGHT|INFO|Spotlight data for uuid='FECD1AE7-94BC-4741-98FD-3C8954E3324E' db='store.db' will be saved with table/sheet name as 1-store
+2019-04-17 16:43:11|MAIN.SPOTLIGHT|INFO|Processing /.Spotlight-V100/Store-V2/FECD1AE7-94BC-4741-98FD-3C8954E3324E/store.db
+2019-04-17 16:43:11|MAIN.SPOTLIGHT|INFO|Creating output folder for spotlight at /Users/user/Desktop/mac_apt_dump/SPOTLIGHT_DATA/FECD1AE7-94BC-4741-98FD-3C8954E3324E
+2019-04-17 16:45:11|MAIN.SPOTLIGHT|INFO|Inodes and Path information being written to /Users/user/Desktop/mac_apt_dump/SPOTLIGHT_DATA/FECD1AE7-94BC-4741-98FD-3C8954E3324E/1-store_fullpaths.csv
+2019-04-17 16:45:26|MAIN.SPOTLIGHT|INFO|VIEW 'SpotlightDataView-1-store' created for spotlight data in database
+2019-04-17 16:45:26|MAIN.SPOTLIGHT|INFO|Now processing file /.Spotlight-V100/Store-V2/FECD1AE7-94BC-4741-98FD-3C8954E3324E/.store.db
+2019-04-17 16:45:26|MAIN.SPOTLIGHT|INFO|Only newer items not found in store.db will be written out!
+2019-04-17 16:45:26|MAIN.SPOTLIGHT|INFO|Spotlight store for uuid='FECD1AE7-94BC-4741-98FD-3C8954E3324E' db='.store.db' will be saved with table/sheet name as 1-.store-DIFF
+2019-04-17 16:45:26|MAIN.SPOTLIGHT|INFO|Processing /.Spotlight-V100/Store-V2/FECD1AE7-94BC-4741-98FD-3C8954E3324E/.store.db
+2019-04-17 16:45:41|MAIN.SPOTLIGHT|INFO|Inodes and Path information being written to /Users/user/Desktop/mac_apt_dump/SPOTLIGHT_DATA/FECD1AE7-94BC-4741-98FD-3C8954E3324E/1-.store-DIFF_fullpaths.csv
+2019-04-17 16:45:41|MAIN.SPOTLIGHT|INFO|VIEW 'SpotlightDataView-1-.store-DIFF' created for spotlight data in database
+2019-04-17 16:45:41|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:45:41|MAIN|INFO|Running plugin SPOTLIGHTSHORTCUTS
+2019-04-17 16:45:42|MAIN.SPOTLIGHTSHORTCUTS|ERROR|Could not open plist /private/var/spool/postfix/Library/Preferences/com.apple.spotlight.plist
+2019-04-17 16:45:42|MAIN.SPOTLIGHTSHORTCUTS|ERROR|Error was: Could not read plist: /private/var/spool/postfix/Library/Preferences/com.apple.spotlight.plist Error was : not well-formed (invalid token): line 1, column 2
+2019-04-17 16:45:44|MAIN.SPOTLIGHTSHORTCUTS|INFO|No shortcut items found
+2019-04-17 16:45:44|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:45:44|MAIN|INFO|Running plugin USERS
+2019-04-17 16:45:45|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to export file /Library/Preferences/com.apple.preferences.accounts.plist to /Users/user/Desktop/mac_apt_dump/Export/USERS/com.apple.preferences.accounts.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 167, in ExtractFile
+    data = self.volume.readFile(path, f)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 564527.
+2019-04-17 16:45:45|MAIN.HELPERS.MACINFO|INFO|Failed to export '/Library/Preferences/com.apple.preferences.accounts.plist' to '/Users/user/Desktop/mac_apt_dump/Export/USERS/com.apple.preferences.accounts.plist'
+2019-04-17 16:45:45|MAIN.HELPERS.MACINFO|ERROR|NativeHFSParser->Failed to open file /Library/Preferences/com.apple.preferences.accounts.plist
+Traceback (most recent call last):
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/macinfo.py", line 147, in OpenSmallFile
+    data = self.volume.readFile(path)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 362, in readFile
+    data = f.readAllBuffer(True, output_file)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 116, in readAllBuffer
+    data = self.volume.read(extent.startBlock * bs, bs * extent.blockCount)
+  File "/Users/user/Desktop/mac_apt/plugins/helpers/hfs_alt.py", line 237, in read
+    return self.img.read(self.offset + offset, size)
+  File "mac_apt.py", line 67, in read
+    return self._ewf_handle.read(size)
+IOError: pyewf_handle_read_buffer: unable to read data. libewf_chunk_data_initialize: invalid chunk data. libewf_read_io_handle_read_chunk_data: unable to create chunk data. libewf_handle_read_buffer: unable to read chunk data: 564527.
+2019-04-17 16:45:45|MAIN.USERS|ERROR|Failed to read plist /Library/Preferences/com.apple.preferences.accounts.plist Error was : Failed to open file
+2019-04-17 16:45:45|MAIN.USERS|INFO|Found 78 users and 0 deleted user(s)
+2019-04-17 16:45:45|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:45:45|MAIN|INFO|Running plugin WIFI
+2019-04-17 16:45:45|MAIN.WIFI|INFO|Found 1 network(s)
+2019-04-17 16:45:45|MAIN|INFO|--------------------------------------------------
+2019-04-17 16:45:51|MAIN|INFO|Finished in time = 00:05:04
+2019-04-17 16:45:51|MAIN|INFO|Review the Log file and report any ERRORs or EXCEPTIONS to the developers
