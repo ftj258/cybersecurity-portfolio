@@ -1,8 +1,7 @@
 # Fatema T. Johra
 
-Senior Information Security Expert | Incident Response | Cloud Security
 
-Cybersecurity professional with 7+ years of experience in enterprise incident response, cloud investigations, and security governance across federal and commercial environments.
+Cybersecurity and Incident Response professional with experience supporting enterprise and federal government environments. I am skilled in threat detection, digital forensics, incident response, and SIEM monitoring across enterprise and cloud systems. Experienced in developing security procedures, supporting risk management initiatives, and strengthening organizational cyber resilience. Proven ability to investigate security incidents, analyze indicators of compromise, and contribute to security operations aligned with the NIST Risk Management Framework.
 
 ---
 
