@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ftj258/cybersecurity-portfolio/main/banner.png" width="100%" />
+</p>
+
 # Cybersecurity Portfolio  
 **Fatema T. Johra** 
 Enterprise Incident Response | Cloud Security | DFIR | Security Governance
