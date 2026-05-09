@@ -2,50 +2,60 @@
   <img src="https://raw.githubusercontent.com/ftj258/cybersecurity-portfolio/main/banner.png" width="100%" />
 </p>
 
-# Cybersecurity Portfolio  
-**Fatema T. Johra** 
-Enterprise Incident Response | Cloud Security | DFIR | Security Governance
+# Cybersecurity Portfolio
+
+## Digital Forensics | Incident Response | Cloud Security
 
 ---
+Cybersecurity professional specializing in digital forensics, incident response, cloud security investigations, and threat detection across enterprise and federal environments.
 
-This repository demonstrates structured Incident Response methodology, cloud investigations, security governance frameworks, automation strategies, tabletop scenarios, and metrics for leadership. All content is sanitized and created for professional demonstration.
-
----
-
-## Portfolio Overview
-
-### Incident Response Framework
-End-to-end lifecycle model covering detection, containment, eradication, recovery, and continuous improvement.
-
-### Tabletop Exercises
-- Ransomware Enterprise Scenario
-- Business Email Compromise (BEC) Simulation
-
-Focus: Executive communication, cross-functional coordination, financial risk awareness.
-
-### SOAR Playbooks
-- Phishing containment automation model
-- Credential compromise response workflow
-
-Focus: Automation maturity and reduced MTTR.
-
----
-
-### Metrics Dashboard
-Operational and executive-level KPIs including MTTD, MTTC, MTTR, automation impact, and governance tracking.
-
-### SOP & Governance Framework
-Incident Response policy lifecycle management and continuous improvement model.
-
----
-
-## Professional Focus
-
-This portfolio reflects my approach to Incident Response as a structured business function — combining technical containment, governance oversight, automation efficiency, and executive-level communication. There is always room to learn and grow! So, lets learn and grow together!
-
----
-
-## 📬 Contact
+This portfolio showcases hands-on cybersecurity projects, incident response workflows, cloud investigation methodologies, forensic analysis techniques, and security operations documentation.
 
 Email: fjohra@hotmail.com  
 LinkedIn: https://www.linkedin.com/in/fjohra/
+
+## 🔥 Core Skills
+
+- Incident Response
+- Digital Forensics
+- Threat Detection
+- SIEM Analysis
+- AWS & Azure Security
+- Threat Hunting
+- Documenting aligned with federal standards and compliance
+
+- ## 🛠️ Tools & Technologies
+
+Splunk • Fidelis • AWS • Azure • FTK • EnCase • Magnet Axiom • Wireshark • Cellebrite • Autopsy
+
+## 📂 Featured Projects
+
+### 🔹 Incident Response Playbooks
+- IR lifecycle workflows
+- Escalation procedures
+- Containment strategies
+- Executive reporting templates
+
+### 🔹 Business Email Compromise (BEC) Tabletop
+- Phishing response simulation
+- Credential compromise workflows
+- Executive communication procedures
+
+### 🔹 Cloud Security Investigations
+- AWS IAM analysis
+- Azure authentication anomaly investigations
+- Cloud log review and correlation
+
+### 🔹 Digital Forensics Investigations
+- Endpoint forensic analysis
+- Evidence handling and chain-of-custody
+- Mobile and cloud forensic workflows
+
+- ## 🌐 Portfolio Website
+
+https://ftj258.github.io
+
+## 📫 Contact
+
+- LinkedIn: https://linkedin.com/in/fjohra
+- GitHub: https://github.com/ftj258
