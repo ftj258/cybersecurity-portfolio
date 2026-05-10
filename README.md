@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ftj258/cybersecurity-portfolio/main/banner.png" width="100%" />
-</p>
+<img src="banner.png" width="100%">
 
 # Cybersecurity Portfolio
 
