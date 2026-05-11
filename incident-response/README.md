@@ -1,30 +1,34 @@
 # Incident Response Portfolio
 
-This folder contains incident response playbooks, tabletop exercises, forensic SOPs, and executive reporting examples designed to demonstrate practical DFIR and enterprise incident response methodology.
+This repository section contains incident response playbooks, executive reporting examples, tabletop exercises, investigation workflows, and operational documentation focused on DFIR and enterprise cybersecurity operations.
 
-## Contents
+The material reflects practical incident response methodology, documentation standards, and operational workflows aligned with federal cybersecurity environments, NIST frameworks, and CISA-style response practices.
+
+---
+
+## Repository Structure
 
 ### Playbooks
-- Incident Response Playbook
-- Incident Response Playbook Markdown Version
+Operational response procedures, CSIRT guidance, and incident response documentation.
 
 ### Tabletop Exercises
-- Business Email Compromise Tabletop Exercise
-- Ransomware Tabletop Exercise
-- SOAR Phishing Email Automation Tabletop
+Scenario-based cybersecurity simulations focused on response coordination and operational readiness.
 
 ### Executive Reporting
-- Incident Response Metrics Dashboard
+Incident metrics, reporting examples, executive summaries, and leadership-focused documentation.
 
-### Forensic SOPs
-- Computer Security Incident Response Team (CSIRT) SOP
-- Mobile Forensics Examination SOP
+### Workflows
+Forensic procedures, investigation workflows, and operational SOPs.
+
+---
 
 ## Focus Areas
-- Incident response lifecycle
-- Detection, triage, containment, eradication, and recovery
-- Executive reporting and metrics
-- Tabletop exercise planning
-- SOAR workflow design
-- Mobile forensic procedures
-- Documentation aligned with federal cybersecurity practices, NIST frameworks, and CISA-style response playbooks
+
+- Incident Response
+- Digital Forensics
+- Threat Detection & Triage
+- Executive Reporting
+- Cloud Security Investigations
+- Security Operations
+- NIST Frameworks
+- CISA-aligned Response Practices
