@@ -17,6 +17,7 @@ This folder contains incident response playbooks, tabletop exercises, forensic S
 - Incident Response Metrics Dashboard
 
 ### Forensic SOPs
+- Computer Security Incident Response Team (CSIRT) SOP
 - Mobile Forensics Examination SOP
 
 ## Focus Areas
