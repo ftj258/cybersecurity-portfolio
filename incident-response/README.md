@@ -1,102 +1,29 @@
 # Incident Response Portfolio
 
-Author: Fatema T. Johra  
-Focus: Enterprise Incident Response | Cloud Security | SOAR Automation | Governance
+This folder contains incident response playbooks, tabletop exercises, forensic SOPs, and executive reporting examples designed to demonstrate practical DFIR and enterprise incident response methodology.
 
----
+## Contents
 
-## Overview
+### Playbooks
+- Incident Response Playbook
+- Incident Response Playbook Markdown Version
 
-This directory showcases structured Incident Response (IR) documentation, scenario planning, automation workflows, and performance metrics designed for enterprise environments.
+### Tabletop Exercises
+- Business Email Compromise Tabletop Exercise
+- Ransomware Tabletop Exercise
+- SOAR Phishing Email Automation Tabletop
 
-All content is sanitized and created for professional portfolio demonstration.
+### Executive Reporting
+- Incident Response Metrics Dashboard
 
-The materials reflect:
+### Forensic SOPs
+- Mobile Forensics Examination SOP
 
-- End-to-end incident lifecycle management
-- Executive-ready reporting
-- Automation strategy
-- Governance alignment
-- Continuous improvement practices
-
----
-
-# Portfolio Structure
-
-## 01 — Incident Response Framework
-
-Comprehensive IR lifecycle model covering:
-
-- Preparation
-- Detection & Analysis
-- Containment
-- Eradication
-- Recovery
-- Lessons Learned
-
-Demonstrates strategic program design and governance integration.
-
----
-
-## 02 — Tabletop Exercises
-
-Scenario-based exercises designed to test response coordination and decision-making:
-
-- Ransomware Enterprise Scenario
-- Business Email Compromise (BEC)
-
-Demonstrates cross-functional communication and escalation handling.
-
----
-
-## 03 — SOAR Playbooks
-
-Automation workflows focused on:
-
-- Phishing containment
-- Credential compromise response
-- Alert enrichment
-
-Demonstrates operational efficiency and automation maturity.
-
----
-
-## 04 — Root Cause Analysis
-
-Structured post-incident reporting template including:
-
-- Executive summary
-- Timeline reconstruction
-- Impact assessment
-- Remediation strategy
-
-Demonstrates investigative discipline and reporting clarity.
-
----
-
-## 05 — Metrics Dashboard
-
-Executive and operational KPIs including:
-
-- MTTD
-- MTTC
-- MTTR
-- Incident volume trends
-- Automation coverage
-
-Demonstrates program-level visibility and continuous improvement strategy.
-
----
-
-## Professional Capabilities Demonstrated
-
-- Incident lifecycle architecture
-- Threat detection and triage
-- Cloud security response
-- Identity compromise containment
-- Automation strategy design
-- Executive reporting and governance alignment
-
----
-
-*All content is educational and sanitized for public portfolio use.*
+## Focus Areas
+- Incident response lifecycle
+- Detection, triage, containment, eradication, and recovery
+- Executive reporting and metrics
+- Tabletop exercise planning
+- SOAR workflow design
+- Mobile forensic procedures
+- Documentation aligned with federal cybersecurity practices, NIST frameworks, and CISA-style response playbooks
