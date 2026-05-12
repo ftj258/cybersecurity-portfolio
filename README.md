@@ -4,24 +4,25 @@
 
 # Cybersecurity Portfolio
 
-This repository contains practical cybersecurity projects focused on incident response, digital forensics, cloud security, threat detection, executive reporting, and federal cybersecurity documentation.
+This repository contains practical cybersecurity documentation and portfolio projects focused on incident response, digital forensics, cloud security, executive reporting, and federal cybersecurity practices.
 
-The portfolio is designed to demonstrate hands-on security operations knowledge, investigation methodology, documentation quality, and familiarity with NIST and CISA-aligned response practices.
+The portfolio is designed to demonstrate investigation methodology, documentation quality, security operations knowledge, and familiarity with NIST and CISA-aligned response practices.
 
-## Featured Areas
+## Portfolio Sections
 
-| Area | Description |
+| Section | Description |
 |---|---|
-| [Incident Response](incident-response/) | Playbooks, tabletop exercises, executive reporting, response workflows, and incident documentation |
-| [Cloud Security](cloud-security/) | AWS and Azure investigation workflows, IAM review, authentication analysis, and cloud evidence collection |
+| [Incident Response](incident-response/) | Incident response playbooks, tabletop exercises, executive reporting, workflows, and incident documentation |
+| [Cloud Security](cloud-security/) | AWS and Azure investigation workflows, IAM activity review, authentication analysis, and cloud evidence collection |
 | [Digital Forensics](digital-forensics/) | Evidence handling, forensic workflows, endpoint analysis, and investigation documentation |
-| [Threat Detection](threat-detection/) | SIEM use cases, detection logic, alert triage, and threat hunting examples |
-| [Governance, Risk & Compliance](governance-risk-compliance/) | NIST, RMF, security controls, SOPs, and federal documentation examples |
+| [Projects](Projects/) | Standalone cybersecurity projects and hands-on technical documentation |
+| [Certifications](Certifications/) | Certification roadmap, completed training, and planned credentials |
+| [Resume](resume/) | Resume and career materials |
 
 ## Core Skills Demonstrated
 
-- Incident Response Lifecycle
-- DFIR Investigation Methodology
+- Incident Response
+- Digital Forensics
 - Cloud Security Investigations
 - SIEM Alert Triage
 - Executive Incident Reporting
@@ -29,13 +30,19 @@ The portfolio is designed to demonstrate hands-on security operations knowledge,
 - NIST RMF and NIST SP 800-53 Concepts
 - CISA-style Incident Response Practices
 
-## Featured Project
+## Featured Work
 
 ### Incident Response Portfolio
 
 The incident response section includes structured documentation for playbooks, tabletop exercises, executive reporting, operational workflows, and incident reports.
 
-[View Incident Response Projects](incident-response/)
+[View Incident Response Section](incident-response/)
+
+### Cloud Security
+
+The cloud security section includes AWS and Azure investigation workflows focused on IAM activity, authentication events, API logs, and access anomalies.
+
+[View Cloud Security Section](cloud-security/)
 
 ## Contact
 
