@@ -49,9 +49,9 @@ Splunk • Fidelis • AWS • Azure • FTK • EnCase • Magnet Axiom • Wir
 - Evidence handling and chain-of-custody
 - Mobile and cloud forensic workflows
 
-- ## 🌐 Portfolio Website
-
-https://ftj258.github.io
+- ## 🌐 Portfolio
+🌐 Portfolio Website: https://ftj258.github.io
+📁 Cybersecurity Portfolio: https://github.com/ftj258/cybersecurity-portfolio
 
 ## 📫 Contact
 
