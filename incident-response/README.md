@@ -1,4 +1,4 @@
-# Incident Response Portfolio
+# Incident Response
 
 This repository section contains incident response playbooks, executive reporting examples, tabletop exercises, investigation workflows, and operational documentation focused on DFIR and enterprise cybersecurity operations.
 
