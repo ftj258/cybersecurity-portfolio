@@ -1,34 +1,26 @@
-# Incident Response
+# Incident Response Portfolio
 
-This repository section contains incident response playbooks, executive reporting examples, tabletop exercises, investigation workflows, and operational documentation focused on DFIR and enterprise cybersecurity operations.
+This section has been expanded into a dedicated repository focused on incident response, DFIR, CSIRT documentation, tabletop exercises, executive reporting, operational workflows, and incident reports.
 
-The material reflects practical incident response methodology, documentation standards, and operational workflows aligned with federal cybersecurity environments, NIST frameworks, and CISA-style response practices.
+## Dedicated Repository
 
----
+[View the full Incident Response Portfolio](https://github.com/ftj258/incident-response-portfolio)
 
-## Repository Structure
+## Included in the Dedicated Repository
 
-### Playbooks
-Operational response procedures, CSIRT guidance, and incident response documentation.
-
-### Tabletop Exercises
-Scenario-based cybersecurity simulations focused on response coordination and operational readiness.
-
-### Executive Reporting
-Incident metrics, reporting examples, executive summaries, and leadership-focused documentation.
-
-### Workflows
-Forensic procedures, investigation workflows, and operational SOPs.
-
----
+- Incident response playbooks
+- CSIRT standard operating procedure
+- Tabletop exercises
+- Executive reporting examples
+- Incident reports
+- Operational workflows
+- NIST and CISA-aligned response documentation
 
 ## Focus Areas
 
 - Incident Response
 - Digital Forensics
-- Threat Detection & Triage
+- CSIRT Operations
+- Evidence Handling
 - Executive Reporting
-- Cloud Security Investigations
-- Security Operations
-- NIST Frameworks
-- CISA-aligned Response Practices
+- Federal Cybersecurity Documentation
