@@ -11,8 +11,8 @@ The portfolio is designed to demonstrate investigation methodology, documentatio
 | [Incident Response](https://github.com/ftj258/cybersecurity-portfolio/tree/main/incident-response) | Incident response playbooks, tabletop exercises, executive reporting, workflows, and incident documentation |
 | [Cloud Security](https://github.com/ftj258/cybersecurity-portfolio/tree/main/cloud-security) | AWS and Azure investigation workflows, IAM activity review, authentication analysis, and cloud evidence collection |
 | [Digital Forensics](https://github.com/ftj258/cybersecurity-portfolio/tree/main/digital-forensics) | Evidence handling, forensic workflows, endpoint analysis, and investigation documentation |
-| [Projects](https://github.com/ftj258/cybersecurity-portfolio/tree/main/Projects) | Standalone cybersecurity projects and hands-on technical documentation |
-| [Certifications](https://github.com/ftj258/cybersecurity-portfolio/tree/main/Certifications) | Certification roadmap, completed training, and planned credentials |
+| [Projects](https://github.com/ftj258/cybersecurity-portfolio/tree/main/projects) | Standalone cybersecurity projects and hands-on technical documentation |
+| [Certifications](https://github.com/ftj258/cybersecurity-portfolio/tree/main/certifications) | Certification roadmap, completed training, and planned credentials |
 | [Resume](https://github.com/ftj258/cybersecurity-portfolio/tree/main/resume) | Resume and career materials |
 
 ## Core Skills Demonstrated
