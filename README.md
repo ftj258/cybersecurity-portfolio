@@ -1,5 +1,3 @@
-[![Cybersecurity Portfolio Banner](assets/banner.png)](assets/banner.png)
-
 # Cybersecurity Portfolio
 
 This repository contains practical cybersecurity documentation and portfolio projects focused on incident response, digital forensics, cloud security, executive reporting, and federal cybersecurity practices.
