@@ -19,7 +19,7 @@ Cybersecurity and Incident Response professional with experience supporting ente
 ## Resume
 
 Download the full resume here:  
-https://github.com/ftj258/Fatema-Johra-Resume/blob/main/Fatema_%20Johra_Resume.pdf 
+[View / Download Resume (PDF)](https://github.com/ftj258/cybersecurity-portfolio/raw/main/resume/Fatema_Johra_Resume.pdf)
 
 ---
 
