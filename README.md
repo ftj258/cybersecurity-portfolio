@@ -12,7 +12,7 @@ The portfolio is designed to demonstrate investigation methodology, documentatio
 | [Cloud Security](https://github.com/ftj258/cybersecurity-portfolio/tree/main/cloud-security) | AWS and Azure investigation workflows, IAM activity review, authentication analysis, and cloud evidence collection |
 | [Digital Forensics](https://github.com/ftj258/cybersecurity-portfolio/tree/main/digital-forensics) | Evidence handling, forensic workflows, endpoint analysis, and investigation documentation |
 | [Projects](https://github.com/ftj258/cybersecurity-portfolio/tree/main/projects) | Standalone cybersecurity projects and hands-on technical documentation |
-| [Certifications](https://github.com/ftj258/cybersecurity-portfolio/tree/main/certifications) | Certification roadmap, completed training, and planned credentials |
+| [Certifications](https://github.com/ftj258/cybersecurity-portfolio/tree/main/certifications) | IFCI Certified Cybercrime Investigator credential |
 | [Resume](https://github.com/ftj258/cybersecurity-portfolio/raw/main/resume/Fatema_Johra_Resume.pdf) | Resume and career materials |
 
 ## Core Skills Demonstrated

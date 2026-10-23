@@ -1,17 +1,16 @@
 {
     "sectorHashSize": 512,
     "filePaths": {
-        "md5deep64": ".\\programs\\md5deep64",
+        "md5deep64": "./utils/programs/md5deep64.exe",
         "python3": null,
-        "hashDB": ".\\programs\\hashdb",
-	"trunc": ".\\programs\\trunc",
-        "hash_list": ".\\resources\\hash_list.txt"
+        "hashDB": "./utils/programs/hashdb.exe",
+	    "trunc": "./utils/programs/trunc.exe",
+        "hash_list": "./utils/hash_list.txt"
     },
     "defaults": {
         "sourceFileName": "test1",
         "sourceName": "test2",
         "databaseName": "test3.hdb",
         "queryMediaComputationMethod": "compute3"
-    },
-    "skipConfirmationDialog": false
+    }
 }

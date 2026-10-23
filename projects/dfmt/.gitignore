@@ -104,7 +104,8 @@ bot-env/
 # mypy
 .mypy_cache/
 
-# dfmt specific stuff
+# HashProject specific stuff
+.vscode
 sources/
 .DS_Store
 databases/

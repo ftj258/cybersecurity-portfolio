@@ -1,0 +1,4 @@
+include dfmt/utils/programs/*.exe
+include dfmt/utils/hash_list.txt
+include dfmt/config.json
+include dfmt/databases/*.md

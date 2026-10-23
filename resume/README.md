@@ -26,4 +26,4 @@ Download the full resume here:
 ## Contact
 
 Email: fjohra@hotmail.com  
-LinkedIn: https://linkedin.com/in/your-link-here
+LinkedIn: https://linkedin.com/in/fjohra

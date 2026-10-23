@@ -1,0 +1,2 @@
+class HashException(Exception):
+    pass
