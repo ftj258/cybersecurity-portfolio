@@ -24,7 +24,7 @@ Response playbooks for common incident types, including phishing, malware, and a
 CSIRT standard operating procedures and incident response governance documentation.
 
 ### 03 — Tabletop Exercises  
-A business email compromise (BEC) tabletop exercise, including scenario design and facilitation notes.
+Three tabletop exercises covering a business email compromise (BEC), a ransomware incident, and SOAR automation for phishing response — each including scenario design and facilitation notes.
 
 ### 04 — Incident Reports  
 Documented write-ups of a credential harvesting incident and an improper-usage/data-spill incident, including root cause analysis and lessons learned.
