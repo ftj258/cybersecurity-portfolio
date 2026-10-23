@@ -50,6 +50,11 @@ Professional report template suitable for:
 Demonstrates structured investigative reporting.
 
 ---
+## Hands-On Labs
+
+The documentation above covers methodology and procedure. For hands-on technical work — including memory forensics with Volatility, disk/timeline reconstruction, and malware analysis in an isolated sandbox — see [dfir-home-labs](https://github.com/ftj258/dfir-home-labs), a separate repo of self-directed practice labs using public tools and datasets.
+
+---
 
 ## Core Competencies Demonstrated
 
