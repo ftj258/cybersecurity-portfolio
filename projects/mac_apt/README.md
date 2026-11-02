@@ -35,3 +35,5 @@ This is the kind of pattern mac_apt is built to surface: reconstructing what a u
 ## What this demonstrates
 
 Multi-source macOS artifact correlation — tying system metadata, shell history, browser activity, search-index data, and file system events together to reconstruct user activity and identify evidence tampering, even when direct evidence has been deleted.
+
+**About the data:** everything here comes from a public forensics training image. The Sumtwelve family, their devices and phone numbers are all fictional.
