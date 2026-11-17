@@ -1,54 +1,32 @@
-# Incident Response Portfolio
+# Incident Response
 
-### Author: Fatema T. Johra  
-**Focus:** Incident Response Lifecycle, CSIRT Governance, Tabletop Exercise Facilitation, and Executive Reporting
+This folder is the response side of my work: the documents I'd reach for during an incident, and the ones I'd hand to leadership after.
 
-This directory contains incident response documentation and portfolio work designed to demonstrate:
+### Playbooks
+A response playbook for the incidents that come up most, phishing, malware, and account compromise. Detection through containment, recovery, and after-action.
 
-• End-to-end incident handling, from detection through after-action review  
-• CSIRT standard operating procedures and governance writing  
-• Tabletop exercise design and facilitation  
-• Executive-ready incident reporting and metrics  
-• Alignment with NIST SP 800-61 and MITRE ATT&CK
+### Governance and Procedures
+The CSIRT standard operating procedure. Who does what, when, and how the team runs an incident from first alert to closure.
 
-All content is sanitized and provided for professional demonstration purposes.
+### Tabletop Exercises
+Three exercises I designed and facilitated, each with the scenario and my facilitation notes:
+- Business email compromise
+- Ransomware
+- SOAR-automated phishing response
 
----
+### Incident Reports
+Two full write-ups, each with the timeline, the root cause, and what we changed afterward:
+- A credential-harvesting incident
+- An improper-usage / data-spill incident
 
-## 📁 Folder Overview
+### Operational Workflows
+A mobile forensics SOP for handling phone evidence during an incident.
 
-### 01 — Playbooks  
-Response playbooks for common incident types, including phishing, malware, and account compromise.
+### Executive Reporting
+An incident-response metrics dashboard, built for the people who want the numbers, not the packet captures.
 
-### 02 — Governance and Procedures  
-CSIRT standard operating procedures and incident response governance documentation.
+Everything here is written to NIST SP 800-61 and mapped to MITRE ATT&CK where it earns it.
 
-### 03 — Tabletop Exercises  
-Three tabletop exercises covering a business email compromise (BEC), a ransomware incident, and SOAR automation for phishing response — each including scenario design and facilitation notes.
-
-### 04 — Incident Reports  
-Documented write-ups of a credential harvesting incident and an improper-usage/data-spill incident, including root cause analysis and lessons learned.
-
-### 05 — Operational Workflows  
-A mobile forensics standard operating procedure for incident handling.
-
-### 06 — Executive Reporting  
-An incident response metrics dashboard built for leadership and executive audiences.
-
----
-
-## 🔍 Skills Demonstrated
-
-• Incident response lifecycle management  
-• CSIRT SOP and IR plan development  
-• Tabletop exercise design and facilitation  
-• After-action report writing  
-• Root cause analysis  
-• Executive incident reporting  
-• NIST SP 800-61 and MITRE ATT&CK alignment
-
----
-
-📬 Contact  
+## Contact
 Email: fjohra@hotmail.com  
 LinkedIn: https://www.linkedin.com/in/fjohra/

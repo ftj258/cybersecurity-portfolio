@@ -1,72 +1,24 @@
-# Digital Forensics & Evidence Handling Portfolio
+# Digital Forensics
 
-Author: Fatema T. Johra  
-Focus: Digital Forensics | Evidence Integrity | Investigative Documentation | Cloud & Endpoint Analysis
+My forensics work splits in two. The hands-on, tool-driven labs live in my separate [dfir-home-labs](https://github.com/ftj258/dfir-home-labs) repo: memory forensics with Volatility, disk and timeline reconstruction, malware pulled apart in a sandbox. This folder holds the reporting side.
 
----
+## Autopsy case report
 
-## Overview
+A full HTML report exported from [Autopsy](https://www.autopsy.com/) after working a disk image end to end. It's the real export, not a summary. Open `02_Forensic_Investigations/samples/index.html` and it links out to everything the analysis turned up:
 
-This directory demonstrates structured digital forensic investigation methodologies, evidence handling procedures, and formal reporting practices aligned with enterprise and legal standards.
+- Web activity: history, bookmarks, cookies, search terms, downloads
+- Email recovered from the image
+- Recent documents, tagged and flagged files, and keyword hits
+- Extension-mismatch findings (how you catch a file wearing the wrong extension)
+- EXIF metadata pulled from recovered images
 
-All content is sanitized and intended for professional portfolio demonstration.
+The disk image is a public training dataset, so there's no real-world PII in it.
 
----
+## Related
 
-## Portfolio Sections
+- [dfir-home-labs](https://github.com/ftj258/dfir-home-labs) — the hands-on technical labs.
+- [Forensic case studies](../projects/forensic-case-studies) — case write-ups from my graduate forensics coursework.
 
-### 01 — Evidence Handling
-
-Documentation of:
-
-- Chain of custody process
-- Evidence acquisition procedures
-- Integrity validation methods
-
-Demonstrates forensic discipline and documentation rigor.
-
----
-
-### 02 — Forensic Investigations
-
-Structured investigative walkthroughs including:
-
-- Endpoint forensic analysis
-- Email header and phishing analysis
-- Cloud forensic investigations
-
-Demonstrates technical depth and analytical methodology.
-
----
-
-### 03 — Forensic Reporting
-
-Professional report template suitable for:
-
-- Legal review
-- Executive briefings
-- Incident closure documentation
-
-Demonstrates structured investigative reporting.
-
----
-## Hands-On Labs
-
-The documentation above covers methodology and procedure. For hands-on technical work — including memory forensics with Volatility, disk/timeline reconstruction, and malware analysis in an isolated sandbox — see [dfir-home-labs](https://github.com/ftj258/dfir-home-labs), a separate repo of self-directed practice labs using public tools and datasets.
-
----
-
-## Core Competencies Demonstrated
-
-- Chain of custody management
-- Forensic imaging procedures
-- Log and artifact analysis
-- Timeline reconstruction
-- Email header analysis
-- Cloud audit log investigation
-- Evidence integrity validation
-- Executive-ready documentation
-
----
-
-*All content is educational and sanitized for public portfolio presentation.*
+## Contact
+Email: fjohra@hotmail.com  
+LinkedIn: https://www.linkedin.com/in/fjohra/

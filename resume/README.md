@@ -1,29 +1,20 @@
 # Fatema T. Johra
 
+Incident response and digital forensics analyst with seven years in federal cybersecurity. Most of my work has been the response side: detecting and triaging incidents, running them down to root cause, and writing them up for the people who have to act on them. Along the way I've owned CSIRT procedures, investigated across endpoints and cloud (AWS, Azure, M365), and spent a lot of time in SIEM data looking for the one event that doesn't fit.
 
-Cybersecurity and Incident Response professional with experience supporting enterprise and federal government environments. I am skilled in threat detection, digital forensics, incident response, and SIEM monitoring across enterprise and cloud systems. Experienced in developing security procedures, supporting risk management initiatives, and strengthening organizational cyber resilience. Proven ability to investigate security incidents, analyze indicators of compromise, and contribute to security operations aligned with the NIST Risk Management Framework.
+I came into this through forensics. I like the part of the job where you follow the evidence backward until the story finally makes sense, and I like writing that story down clearly enough that nobody has to ask me twice.
 
----
-
-## Areas of Expertise
-
-- Incident Response Lifecycle
-- Cloud Security (AWS, Azure)
-- Security Governance & SOP Development
-- Root Cause Analysis
-- SIEM & SOAR Automation
-- Executive Risk Reporting
-
----
+## What I work on
+- Incident response, start to finish
+- Digital forensics and evidence handling
+- Cloud and endpoint investigations (AWS, Azure, M365)
+- CSIRT governance and SOP writing
+- SIEM monitoring and alert triage
+- Incident reporting for leadership
 
 ## Resume
-
-Download the full resume here:  
 [View / Download Resume (PDF)](https://github.com/ftj258/cybersecurity-portfolio/raw/main/resume/Fatema_Johra_Resume.pdf)
 
----
-
 ## Contact
-
 Email: fjohra@hotmail.com  
 LinkedIn: https://linkedin.com/in/fjohra

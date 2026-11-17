@@ -1,47 +1,29 @@
 # Cybersecurity Portfolio
 
-This repository contains practical cybersecurity documentation and portfolio projects focused on incident response, digital forensics, cloud security, executive reporting, and federal cybersecurity practices.
+I'm Fatema, an incident response and digital forensics analyst. This repo is the written side of that work: the playbooks and incident reports I've put together, a forensic case export, and a few projects I built or researched on my own.
 
-The portfolio is designed to demonstrate investigation methodology, documentation quality, security operations knowledge, and familiarity with NIST and CISA-aligned response practices.
+Most people treat documentation as the chore at the end. I think it's the point. When an investigation is over, the write-up is what's left. It's how the next person understands what happened, and it's how you prove you didn't miss anything. So most of what's here is exactly that, written to be read.
 
-## Portfolio Sections
+## What's in here
 
-| Section | Description |
-| --- | --- |
-| [Incident Response](https://github.com/ftj258/cybersecurity-portfolio/tree/main/incident-response) | Incident response playbooks, tabletop exercises, executive reporting, workflows, and incident documentation |
-| [Cloud Security](https://github.com/ftj258/cybersecurity-portfolio/tree/main/cloud-security) | AWS and Azure investigation workflows, IAM activity review, authentication analysis, and cloud evidence collection |
-| [Digital Forensics](https://github.com/ftj258/cybersecurity-portfolio/tree/main/digital-forensics) | Evidence handling, forensic workflows, endpoint analysis, and investigation documentation |
-| [Projects](https://github.com/ftj258/cybersecurity-portfolio/tree/main/projects) | Standalone cybersecurity projects and hands-on technical documentation |
-| [Certifications](https://github.com/ftj258/cybersecurity-portfolio/tree/main/certifications) | IFCI Certified Cybercrime Investigator credential |
-| [Resume](https://github.com/ftj258/cybersecurity-portfolio/raw/main/resume/Fatema_Johra_Resume.pdf) | Resume and career materials |
+**[Incident Response](incident-response)** — The response side of the job. Playbooks for phishing, malware, and account compromise; three tabletop exercises I designed and facilitated (business email compromise, ransomware, and SOAR-automated phishing); two full incident reports with timelines, root cause, and what changed afterward; a CSIRT SOP; and an executive metrics dashboard. Written to NIST SP 800-61 and mapped to MITRE ATT&CK where it fits.
 
-## Core Skills Demonstrated
+**[Digital Forensics](digital-forensics)** — A full Autopsy case report from a disk-image analysis: recovered web and email artifacts, keyword hits, extension-mismatch findings, EXIF metadata. The hands-on technical labs (memory forensics with Volatility, timeline reconstruction, malware in a sandbox) live in my separate [dfir-home-labs](https://github.com/ftj258/dfir-home-labs) repo.
 
-- Incident Response
-- Digital Forensics
-- Cloud Security Investigations
-- SIEM Alert Triage
-- Executive Incident Reporting
-- Security Documentation
-- NIST RMF, NIST SP 800-53, and NIST SP 800-61 Concepts
-- CISA-style Incident Response Practices
+**[Projects](projects)** — The work I'm proudest of:
+- **dfmt** — a hash-database forensics tool I built, with its own query API.
+- **mac_apt analysis** — a macOS artifact investigation that caught an attacker covering their tracks.
+- **"The Cannibal Cop" research paper** — the Gilberto Valle case, and where the line sits between fantasy and intent in digital evidence.
+- **Forensic case studies** from my graduate forensics coursework.
 
-## Featured Work
+**[Certifications](certifications)** — IFCI Certified Cybercrime Investigator.
 
-### Incident Response Portfolio
+**[Resume](resume/Fatema_Johra_Resume.pdf)**
 
-The incident response section includes structured documentation for playbooks, tabletop exercises, executive reporting, operational workflows, and incident reports.
-
-[View Incident Response Section](https://github.com/ftj258/cybersecurity-portfolio/tree/main/incident-response)
-
-### Cloud Security
-
-The cloud security section includes AWS and Azure investigation workflows focused on IAM activity, authentication events, API logs, and access anomalies.
-
-[View Cloud Security Section](https://github.com/ftj258/cybersecurity-portfolio/tree/main/cloud-security)
+A note on the evidence: everything here comes from public datasets, training images, or coursework. None of it is real casework.
 
 ## Contact
 
-- Portfolio Website: https://ftj258.github.io
+- Portfolio: https://ftj258.github.io
 - GitHub: https://github.com/ftj258
 - LinkedIn: https://www.linkedin.com/in/fjohra/
